@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="autor" content="Bartosz Dawid">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>
+    Kalkulator stworzony przez Bartosza Dawida
+</h1>
+
+    <script>
+     
+   
+
+        let liczba1 = parseInt(prompt('Podaj pierwszą liczbę'));
+        let liczba2 = parseInt(prompt('Podaj druga liczbę'));
+        const znak1 = prompt('Podaj znak');
+
+
+        document.write('Switch ');
+        
+        switch (znak1) {
+            case '+':
+                document.write(liczba1+liczba2)
+                break;
+                
+            case '-':
+                document.write(liczba1-liczba2)
+                break;
+
+             case '*':
+                document.write(liczba1*liczba2)
+                break;
+
+            case ':':
+                document.write(liczba1/liczba2)
+                break
+        
+            default:
+                document.write('Nie znam takiego działania :(')
+                break;
+        }
+
+        let liczba3 = parseInt(prompt('Podaj trzecią liczbę'));
+        let liczba4 = parseInt(prompt('Podaj czwartą liczbę'));
+        const znak2 = prompt('Podaj znak');
+
+        document.write(' If ');
+
+        if(znak2=='+')
+        {
+            document.write(liczba3+liczba4)
+        }
+        else if(znak2=='-')
+        {
+            document.write((liczba3-liczba4))
+        }
+        else if(znak2=='*')
+        {
+            document.write(liczba3*liczba4)
+        }
+        else if(znak2==':')
+        {
+            document.write(liczba3/liczba4)
+        }
+        else
+        {
+            document.write('Nie znam takiego działania :(')
+        }
+
+    </script>
+
+
+</body>
+</html>
